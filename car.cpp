@@ -7,14 +7,14 @@ Car::Car(const string& brand, int year, double price, const string& configuratio
     country(country), saleDate(saleDate), buyer(buyer) {}
 
 string Car::getInfo() const {
-    stringstream ss;
+    stringstream ss; // Для работы со строками
     ss << "Brand: " << brand << ", Year: " << year
         << ", Price: " << price << ", Configuration: " << configuration
         << ", Country: " << country << ", Sale Date: " << saleDate
         << ", Buyer: " << buyer;
     return ss.str();
 }
-
+// Метод получения цены машины
 double Car::getPrice() const {
     return price;
 }

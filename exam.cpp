@@ -17,8 +17,8 @@ void printMenu() {
 
 int main() {
     try {
-        CarContainer container;
-        int choice;
+        CarContainer container; // Контейнер для хранения машин
+        int choice; // Выбор пользователя
 
         while (true) {
             printMenu();
@@ -54,7 +54,7 @@ int main() {
                 cin.ignore(); 
 
                 UsedCar* usedCar = new UsedCar(brand, year, price, configuration, country, saleDate, buyer, condition, previousOwner, mileage);
-                container.addCar(usedCar);  
+                container.addCar(usedCar);   // Добавляем машину в контейнер
             }
             else if (choice == 2) {
                 string brand, configuration, country, saleDate, buyer;
